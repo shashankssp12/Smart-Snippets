@@ -12,7 +12,7 @@ const CATEGORIES = [
   { name: "history", color: "#f97316" },
   { name: "news", color: "#8b5cf6" },
 ];
-// #3b82f6,#16a34a,#ef4444,#eab308,#db2777,#14b8a6,#f97316,#8b5cf6
+
 
 const initialFacts = [
   {
@@ -80,7 +80,7 @@ setIsLoading(false);
 // console.log(facts);
 }
 getFacts();
-},[currentCategory]);//this empty arry[] ensures that this functions runs only at the beginning .==>ALso known as Dependency array 
+},[currentCategory]);
 
 
 return (    
@@ -293,5 +293,3 @@ function Fact({fact,setFacts}){
                     
 }
 export default App;
-
-//Each function is called component
